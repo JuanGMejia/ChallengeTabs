@@ -21,4 +21,8 @@ Welcome to the Angular Tabs Challenge! Your goal is to build a custom tab compon
 2. The `src/app/app.html` file contains an example of how your `<app-tabs>` and `<app-tab>` should be used. Currently, they don't do anything! 
 3. Implement the logic to make the tabs functional.
 
+
+Final Result Preview
+
+![Example screenshot](tabs.gif)
 Good luck!

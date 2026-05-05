@@ -7,5 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './tabs.component.scss',
 })
 export class TabsComponent {
-
 }

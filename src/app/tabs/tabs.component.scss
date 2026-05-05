@@ -1,9 +1,71 @@
 .tabs-header {
-    display: flex;
-    border-bottom: 1px solid #ccc;
-    gap: 1rem;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+
+  button {
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    outline: none;
+
+    &:hover {
+      color: #343a40;
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    &.active {
+      color: #007bff;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 3px;
+        background: #007bff;
+        border-radius: 2px;
+      }
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
 }
 
 .tabs-content {
-    padding: 1rem 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
