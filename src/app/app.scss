@@ -1,0 +1,28 @@
+.main {
+    padding: 2rem;
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .content h1 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+  }
+
+  .challenge-container {
+    margin-top: 2rem;
+    border: 1px dashed #999;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .welcome-tab,
+  .info-tab {
+    padding: 1rem;
+  }
+
+  ul {
+    line-height: 1.6;
+  }
